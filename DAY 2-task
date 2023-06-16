@@ -2,28 +2,35 @@
 
         What is window object and document object in JavaScript?
 Image result for difference between document and window object
-Window object − Top of the hierarchy. It is the outmost element of the object hierarchy. Document object − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.
+Window object − Top of the hierarchy. It is the outmost element of the object hierarchy. Document object −
+Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.
 
-In Visual Studio, a document window is a framed child window that is associated with a multiple-document interface (MDI) window. Document windows are typically used for the display and modification of source code or text, but they can also host other functional types.
+In Visual Studio, a document window is a framed child window that is associated with a multiple-document interface (MDI) window.
+Document windows are typically used for the display and modification of source code or text, but they can also host other functional types.
 
-Well, the window is the first thing that gets loaded into the browser. This window object has the majority of the properties like length, innerWidth, innerHeight, name, if it has been closed, its parents, and more.
+Well, the window is the first thing that gets loaded into the browser. This window object has the majority of the properties like length, 
+innerWidth, innerHeight, name, if it has been closed, its parents, and more.
 
-The document object is your html, aspx, php, or other document that will be loaded into the browser. The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc. What does this really mean? That means if you want to access a property for the window it is window.property, if it is document it is window.document.property which is also available in short as document.property.
+The document object is your html, aspx, php, or other document that will be loaded into the browser. The document actually gets loaded 
+inside the window object and has properties available to it like title, URL, cookie, etc. 
+What does this really mean? That means if you want to access a property for the window it is window.property, 
+if it is document it is window.document.property which is also available in short as document.property.
 
 window is the execution context and global object for that context's JavaScript
 document contains the DOM, initialized by parsing HTML..
 
 window:
-
-
-Each browser tab has its own top-level window object. Each <iframe> (and deprecated <frame>) element has its own window object too, nested within a parent window. Each of these windows gets its own separate global object. window.window always refers to window, but window.parent and window.top might refer to enclosing windows, giving access to other execution contexts. In addition to document and screen described below, window properties include
+Each browser tab has its own top-level window object. Each <iframe> (and deprecated <frame>) element has its own window object too, nested within a parent window.
+Each of these windows gets its own separate global object. window.window always refers to window, but window.parent and window.
+top might refer to enclosing windows, giving access to other execution contexts. In addition to document and screen described below, window properties include
 
 setTimeout() and setInterval() binding event handlers to a timer
 location giving the current URL
 history with methods back() and forward() giving the tab's mutable history
 navigator describing the browser software
 document
-Each window object has a document object to be rendered. These objects get confused in part because HTML elements are added to the global object when assigned a unique id. E.g., in the HTML snippet
+Each window object has a document object to be rendered. These objects get confused in part because HTML elements are added to the global object 
+when assigned a unique id. E.g., in the HTML snippet
 
 <body>
   <p id="holyCow"> This is the first paragraph.</p>
